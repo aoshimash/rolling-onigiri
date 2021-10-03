@@ -1,0 +1,26 @@
+.food-image {
+  position: fixed;
+  top: calc(50% - 800px / 2);
+  left: calc(50% - 800px / 2);
+  width: 800px;
+  z-index: 2147483647;
+  animation: 5s linear infinite rotation;
+}
+
+.food-image-bottom-right {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 300px;
+  z-index: 2147483647;
+  animation: 5s linear infinite rotation;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

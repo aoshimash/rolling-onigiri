@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "rolling-onigiri",
+  "version": "1.0",
+
+  "description": "Adds a browser action icon to the toolbar. Click the button to choose a food. The food starts to rolling in the active tab.",
+  "homepage_url": "https://github.com/aoshimash/rolling-onigiri",
+  "icons": {
+    "48": "icons/onigiri-48.png",
+    "96": "icons/onigiri-96.png"
+  },
+
+  "permissions": ["activeTab"],
+
+  "browser_action": {
+    "default_icon": "icons/onigiri-48.png",
+    "default_title": "rolling-onigiri",
+    "default_popup": "popup/choose_food.html"
+  },
+
+  "web_accessible_resources": ["images/onigiri.jpg", "images/ebifry.jpg"]
+}
